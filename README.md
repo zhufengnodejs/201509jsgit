@@ -32,6 +32,23 @@ git init
 ls -al
 ```
 
+#添加文件
+```
+echo 1 > index.html   // 把1输出到新创建的index.html文件中  > 表示清空并写入
+echo 2 >> index.html // 追2加到index.html中 >>表示在原来文件的末尾追加
+cat index.html //查看文件内容
 
+git add index.html //把文件添加到暂存区
+git commit index.html -m"在index.html中增加了 1 2"
 
+git log 查看历史
+
+```
+
+#问题记录
+1. 出现> 大于号
+```git commit -m"提交文件"``
+一旦输入了中文的双引号，要按`ctrl+c`退出重新执行名
+2. 删除的文件
+`git add` 添加的变化，不管是增加文件，还是修改文件，还是删除文件，都需要`add`.
 
