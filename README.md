@@ -47,6 +47,47 @@ git log 查看历史
 
 ```
 
+#往文件里追加内容
+```
+echo 3 >> index.html
+```
+#查看文件的内容
+```
+cat index.html
+```
+#查看变化的文件
+```
+git status
+```
+##查看文件变化的内容
+```
+git diff
+```
+#图形化的方式显示历史
+```
+ git log --graph
+```
+#推送
+```
+//添加远程仓库地址
+$ git remote add origin https://github.com/zhufengnodejs/201509gitstudy.git
+//推送远程仓库
+$ git push -u origin master
+//拉取最新代码
+$ git pull origin master
+
+```
+#管理远程仓库
+```
+//查看添加的远程仓库
+git remote -v
+///删除远程仓库
+git remote rm origin
+
+```
+
+
+
 #问题记录
 1. 出现> 大于号
 ```git commit -m"提交文件"``
